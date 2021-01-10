@@ -1,4 +1,4 @@
-# livequery
+# live-check
 
 Some case we need check if `Dom` on the document. so that we can use `setInterval` check this `dom` length property, like this:
 
@@ -10,15 +10,15 @@ if (dom.length) {
 
 if `dom` on the document you can do what you want to do.
 
-use `livequery` can easy to do that case.
+use `live-check` can easy to do that case.
 
 ### Install
 
 ```bash
-npm install live-query
+npm install live-check
 
 //or yarn 
-yarn install live-query
+yarn install live-check
 ```
 
 ### Your code
@@ -27,9 +27,9 @@ yarn install live-query
 
 // i you want to check dom on the document use this
 
-import liveQuery from 'live-query'
+import liveCheck from 'live-check'
 
-liveQuery(()=> {
+liveCheck(()=> {
   document.querySelector(".username")
 },{
   checkTimes: 10,
