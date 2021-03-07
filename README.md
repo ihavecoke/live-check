@@ -1,14 +1,14 @@
 # live-check
 
-Some case we need check if `Dom` on the document. so that we can use `setInterval` check this `dom` length property, like this:
+Some case we need check if some elements  on the document. so we can use `setInterval` check this `dom` length property like this:
 
 ```javascript
-if (dom.length) {
-  // do something
-}
+  if (dom.length) {
+    // do something
+  }
 ```
 
-if `dom` on the document you can do what you want to do.
+if `dom` on the document you can write your logic.
 
 use `live-check` can easy to do that case.
 
@@ -25,7 +25,7 @@ yarn install live-check
 
 ```javascript
 
-// i you want to check dom on the document use this
+// Check username dom exisit on document you can do this: 
 
 import liveCheck from 'live-check'
 
@@ -35,9 +35,9 @@ liveCheck(()=> {
   checkTimes: 10,
   checkInterval: 1*500
 }).then(()=>{
-  // now you can operation the document here or implement you bussiness logic
+  // Now you can operation the document here or implement you bussiness logic
 }).catch(()=>{
-  // oops the document not exist the `username` dom with class 
+  // oops the document not exist during in 10 * 1*500 millisecond over
 })
 
 ```
